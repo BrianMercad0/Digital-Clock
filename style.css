@@ -1,0 +1,81 @@
+body{
+    background-color:black;
+    font-family: 'Sunflower', sans-serif;
+}
+
+
+
+.bg{
+    border-radius: 15px;
+    position: absolute;
+    padding:100px;
+    z-index: -1;
+    margin: -8px;
+    margin-left:325px;
+    margin-top:229px;
+    width:710px;
+    height: 180px;
+    background: linear-gradient(-45deg, blue, purple, rgb(202,146,156),blue);
+	background-size: 400% 400%;
+    animation: gradient 10s linear infinite;
+    box-shadow: 0px 0px 50px 5px rgb(179, 24, 179) ,0px 0px 20px 10px rgb(160, 160, 160);
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+
+    70% {
+        background-position:50% 50% ;
+    }
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#container {
+    position: absolute;
+    background-color: black;
+    border:solid 10px rgb(0, 0, 0);
+    border-radius: 15px;
+    margin:auto;
+    text-align: center;
+    padding:70px;
+    padding-top:80px;
+    width:700px;
+    margin-top: 250px;
+    font-size: 60px;
+    margin-left:350px;
+    text-shadow: 2px 2px 2px black transparent;
+}
+
+#myDay{
+padding-bottom:20px;
+}
+
+
+.linear-wipe, #myDay {
+    background: linear-gradient(-45deg, blue, purple, rgb(202,146,156), blue);
+    background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 10s linear infinite;
+}
+/*
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+  */
+
+
